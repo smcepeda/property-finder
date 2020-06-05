@@ -11,18 +11,25 @@
 
 
   </head>
-
+ <body>
+ <% if ["public","devise"].include?(controller.controller_name) %>
 
   <header>
-    <%= render "layouts/nav/public"%>
-  
+    <%= render "layouts/nav/public"%> 
   </header>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+  <% else %>
+    <%= render "layouts/nav/dashboard"%> 
 
+    <div class="container-fluid">
+      <div class="row">
+      <%= render 'layouts/nav/sidebar' %>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <%= yield %>
+        </main>
+      </div>
+    </div>
+  <% end %>
 
-  <body>
-    <%= yield %>
 
   <%= render "layouts/footer"%>
 
