@@ -25,6 +25,7 @@ gem 'fog', '~> 1.37.0'
 
 #image resizing
 gem 'mini_magick'
+gem 'rmagick'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
