@@ -1,12 +1,25 @@
 .property-thumb {
-  height:196px;
+  height:170px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  a {
+    display:block;
+    width:100%;
+    height:100%;
+
+  }
 }
 
 .property-main-photo{
-  height: 700px;
+  height: 500px;
   background-size: cover;
   margin-bottom:40px;
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
+
 
 #prop-details {
   height: 150px;

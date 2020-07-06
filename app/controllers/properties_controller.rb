@@ -13,6 +13,7 @@ class PropertiesController < ApplicationController
   # GET /properties/1.json
   def show
     @agent = @property.account
+    @agent_properties = Property.where(account_id: @agent.id).where.not(id: @property.id)
   end
 
   # GET /properties/new
@@ -76,6 +77,6 @@ class PropertiesController < ApplicationController
     end
     # Only allow a list of trusted parameters through.
     def property_params
-      params.require(:property).permit(:name, :address, :price, :rooms, :bathrooms, :parking_spaces,:details, :photo, :photo_cache)
+      params.require(:property).permit(:name, :address, :price, :rooms, :bathrooms, :parking_spaces,:details, :photo, :photo_cache, :for_sal,:available_date)
     end
 end

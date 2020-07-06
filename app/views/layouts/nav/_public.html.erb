@@ -25,7 +25,7 @@
         </div>
       </li>
 
-    <% if account_signed_in?%>  
+    <% if account_signed_in?%>
     <li class="nav-item">
       <%= link_to "Log out", destroy_account_session_path, method: :delete, class:"nav-link"%>
     <% else %>
@@ -34,7 +34,7 @@
       <li class="nav-item">
             <%= link_to "Sign Up", new_account_registration_path, class:"nav-link" %>
       </li>
-    
+
     <% end %>
     </ul>
     <form class="form-inline my-2 my-lg-0">

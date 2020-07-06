@@ -1,0 +1,38 @@
+{
+    "files.autoSave": "onFocusChange",
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.rulers": [
+        80
+    ],
+    "csscomb.preset": "/path/to/csscomb.json",
+    "editor.minimap.enabled": false,
+    "ruby.lint": {
+        "rubocop": {
+            "lint": true,
+            "rails": true
+        }
+    },
+    "workbench.activityBar.visible": true,
+    "telemetry.enableCrashReporter": false,
+    "files.trimTrailingWhitespace": true,
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/tmp": true,
+        "**/coverage": true,
+        "**/log": true,
+        "**/public/uploads": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/log": true
+    }
+}
